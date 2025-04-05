@@ -1,3 +1,11 @@
+/* CSS BY JOSE LONGO */
+
+/* IMPORTED FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS REST */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,8 +55,7 @@ table {
 	border-spacing: 0;
 }
 
-/* ----- CUSTOM STYLES ----- */
-/* ----- GLOBAL/ROOT STYLES ----- */
+/* ROOT VARIABLES */
 
 :root{
     /* Color Theme Swatches in Hex */
@@ -59,4 +66,48 @@ table {
     --dark-charcoal: #2B2B2B;
     --soft-white: #FAF9F6;
 
+    /* ----- FONTS ----- */
+
+    --font-family: Playfair Display;
+
 }
+
+/* GLOBAL STYLES (mobile first/small) */
+
+body {
+    font-family: var(--font-family), serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: var(--linen);
+    color: var(--dark-charcoal);
+}
+
+header {
+    background-color: var(--midnight-blue);
+    color: var(--linen);
+    text-align: center;
+    
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+header p{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+nav {
+    background-color: var(--champagne-gold);
+    display: grid;
+    
+}
+
