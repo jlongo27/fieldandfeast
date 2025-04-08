@@ -77,18 +77,13 @@ table {
 body {
     font-family: var(--font-family), serif;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     background-color: var(--soft-white);
     color: var(--dark-charcoal);
-    display: grid;
-    justify-content: center;
-    grid-gap: 5px 50px;
-    grid-template-columns: auto;
-    grid-template-areas: "head" "about" "offerings" "gallery" "footer";
-}
+  }
+  
 
 header {
-    grid-area: head;
     background-color: var(--midnight-blue);
     color: var(--linen);
     text-align: center;
@@ -149,13 +144,13 @@ p{
     line-height: 1.25;
 }
 
-main{
-    margin: 2rem;
-
-}
+main {
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+  
 
 #about{
-    grid-area: about;
     border-bottom: 1.5px solid var(--champagne-gold);
     padding-bottom: 16px;
 }
@@ -236,7 +231,6 @@ h3{
 }
 
 footer {
-    grid-area: footer;
     background-color: var(--midnight-blue);
     color: var(--linen);
     text-align: center;
@@ -318,10 +312,13 @@ footer {
   
   @media screen and (min-width: 1200px) {
 
-    main{ 
-        max-width: 1200px;
-        padding: 0 15rem;
+    @media screen and (min-width: 1200px) {
+        main {
+            padding: 0 12rem;
+
+        }
       }
+      
 
     .gallery-grid {
       grid-template-columns: repeat(5, 1fr);
